@@ -1,0 +1,251 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #4b3832, #854442, #d9b6a3);
+    color: #2c2c2c;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+}
+.video-background {
+    position: fixed; /* Fix the video to the background */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1; /* Send video behind other content */
+}
+
+#background-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure video covers entire background */
+}
+
+.container {
+    position: relative;
+    z-index: 1;
+    background: #f4f1ea;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    max-width: 900px;
+    width: 100%;
+    margin: 20px 0;
+    background-image: url('./images/containerbg.jpeg'); /* Replace with your image path */
+
+}
+
+
+header {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.coffee-cup {
+    width: 100px;
+    height: auto;
+}
+
+h1 {
+    font-family:'CoffeeCream';
+    font-weight: 900;
+    font-size: 90px;
+    /* margin-bottom: 10px; */
+    color:#6F4E37
+;
+    /* text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); */
+}
+
+p {
+    font-size: 16px;
+    color: #5c5c5c;
+    line-height: 1.6;
+}
+
+h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #6b3e26;
+    border-bottom: 2px solid #d9b6a3;
+    padding-bottom: 5px;
+}
+
+.introduction {
+    margin-bottom: 30px;
+}
+
+.coffee-categories {
+    margin-bottom: 40px;
+}
+
+.category-grid {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.category-item {
+    background: #f4f1ea;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 45%;
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.category-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+.category-item img {
+    width: 100%;
+    height: auto;
+    border-bottom: 2px solid #d9b6a3;
+    margin-bottom: 10px;
+}
+
+.category-item h3 {
+    margin: 10px 0;
+    font-size: 22px;
+    color: #4b3832;
+}
+
+.category-item p {
+    font-size: 14px;
+    color: #5c5c5c;
+}
+
+.featured-products {
+    margin-bottom: 40px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    background: #f4f1ea;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+table th, 
+table td {
+    padding: 12px;
+    border: 1px solid #d9b6a3;
+    text-align: left;
+    color: #4b3832;
+}
+
+table th {
+    background-color: #854442;
+    color: #f4f1ea;
+    font-weight: bold;
+}
+
+table tr:nth-child(even) {
+    background-color: #f9f2e4;
+}
+
+.testimonials {
+    margin-bottom: 40px;
+}
+
+.testimonial {
+    background: #f9f2e4;
+    padding: 15px;
+    border-left: 5px solid #854442;
+    margin-bottom: 15px;
+    font-size: 16px;
+    color: #3e3e3e;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial p:first-of-type {
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+.testimonial p:last-of-type {
+    text-align: right;
+    font-size: 14px;
+    color: #5c5c5c;
+}
+
+.order-form {
+    margin-bottom: 40px;
+}
+
+label {
+    display: block;
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #3e3e3e;
+}
+
+select,
+input[type="number"] {
+    width: 100%;
+    padding: 12px 15px;
+    border-radius: 5px;
+    border: 1px solid #d9b6a3;
+    margin-bottom: 20px;
+    font-size: 16px;
+    outline: none;
+    box-sizing: border-box;
+}
+
+button {
+    padding: 15px 20px;
+    border: none;
+    border-radius: 5px;
+    background: linear-gradient(45deg, #4b3832, #854442);
+    color: #f4f1ea;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
+
+button:hover {
+    background: linear-gradient(45deg, #854442, #4b3832);
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+    border-top: 1px solid #d9b6a3;
+    color: #5c5c5c;
+}
+
+footer p {
+    margin: 5px 0;
+}
+footer a i{
+    font-size:30px;
+
+}
+footer a {
+    color: #854442;
+    text-decoration: none;
+    margin: 0 10px;
+    transition: color 0.3s ease-in-out;
+}
+
+footer a:hover {
+    color: #4b3832;
+}
+@font-face {
+    font-family: 'CoffeeCream'; /* The name you'll use in your CSS */
+    src: url('./images/CoffeeCream.ttf') format('truetype');
+    font-weight:bold;
+    font-style: normal;
+}

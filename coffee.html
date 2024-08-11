@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="https://kit.fontawesome.com/ec75a8ccfe.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Coffee Shop</title>
+    <link rel="stylesheet" href="coffee.css">
+    <link rel="icon" href="./images/coffee-cup.png" type="image/png">
+
+</head>
+
+<body>
+    <div class="video-background">
+        <video autoplay muted loop id="background-video">
+            <source src="./images/coffeebg.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+    <div class="container">
+        <header>
+            
+            <img src="./images/coffee_logo.png" alt="Coffee Cup" class="coffee-cup">
+            <h1>CAFÉ DIVIN</h1>
+            <p>Your perfect cup of coffee is just a click away! Explore our wide variety of coffee blends and find your new favorite brew.</p>
+        </header>
+
+        <section class="introduction">
+            <h2>About Our Coffee</h2>
+            <p>At Our Coffee Shop, we believe in delivering the best coffee experience possible. From sourcing the finest beans to perfecting the brewing process, our mission is to bring the joy of a great cup of coffee to every customer.</p>
+        </section>
+
+        <section class="coffee-categories">
+            <h2>Our Coffee Categories</h2>
+            <div class="category-grid">
+                <div class="category-item">
+                    <img src="./images/espresso.jpg" alt="Espresso">
+                    <h3>Espresso</h3>
+                    <p>Rich, bold, and full-bodied. The perfect base for any coffee drink.</p>
+                </div>
+                <div class="category-item">
+                    <img src="./images/latte.jpg" alt="Latte">
+                    <h3>Latte</h3>
+                    <p>Smooth and creamy with just the right amount of milk.</p>
+                </div>
+                <div class="category-item">
+                    <img src="./images/cappuccino.jpeg" alt="Cappuccino">
+                    <h3>Cappuccino</h3>
+                    <p>Espresso topped with a deep layer of foam and steamed milk.</p>
+                </div>
+                <div class="category-item">
+                    <img src="./images/mocha.jpg" alt="Mocha">
+                    <h3>Mocha</h3>
+                    <p>A perfect blend of coffee and chocolate for a sweet treat.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="featured-products">
+            <h2>Featured Products</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Product</th>
+                        <th>Description</th>
+                        <th>Price</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Cold Brew</td>
+                        <td>Slow-brewed coffee served over ice.</td>
+                        <td>$4.00</td>
+                    </tr>
+                    <tr>
+                        <td>Macchiato</td>
+                        <td>Espresso with a dash of foamed milk.</td>
+                        <td>$3.75</td>
+                    </tr>
+                    <tr>
+                        <td>Flat White</td>
+                        <td>Smooth espresso with steamed milk.</td>
+                        <td>$3.50</td>
+                    </tr>
+                    <tr>
+                        <td>Cortado</td>
+                        <td>Equal parts espresso and steamed milk.</td>
+                        <td>$3.25</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section class="testimonials">
+            <h2>What Our Customers Say</h2>
+            <div class="testimonial">
+                <p>"The best coffee shop in town! Their espresso is unmatched, and the ambiance is perfect for any coffee lover."</p>
+                <p>- Coffee Enthusiast</p>
+            </div>
+            <div class="testimonial">
+                <p>"I can't start my day without a latte from here. The quality is always top-notch, and the staff is so friendly."</p>
+                <p>- Morning Commuter</p>
+            </div>
+            <div class="testimonial">
+                <p>"Their cold brew is the best I've ever had. It's smooth, refreshing, and exactly what I need on a hot day."</p>
+                <p>- Cold Brew Aficionado</p>
+            </div>
+        </section>
+
+        <section class="order-form">
+            <h2>Place Your Order</h2>
+            <form action="#" method="POST">
+                <label for="coffee-type">Choose Coffee Type:</label>
+                <select id="coffee-type" name="coffee-type" required>
+                    <option value="espresso">Espresso - $2.50</option>
+                    <option value="americano">Americano - $3.00</option>
+                    <option value="cappuccino">Cappuccino - $3.50</option>
+                    <option value="latte">Latte - $3.75</option>
+                    <option value="mocha">Mocha - $4.00</option>
+                </select>
+
+                <label for="quantity">Quantity:</label>
+                <input type="number" id="quantity" name="quantity" min="1" value="1" required>
+
+                <button type="submit">Order Now</button>
+            </form>
+        </section>
+
+        <footer>
+            <p>&copy; 2024 Online Coffee Shop. All rights reserved.</p>
+            <p>Follow us on:
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+        
+            </p>
+        </footer>
+    </div>
+</body>
+
+</html>
